@@ -1,30 +1,60 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
+<html lang="ru"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Платформа онлайн-курсов по «Обучению педагогов».</title>
 </head>
 <body> 
-<header>
-    <img src="images/logo.png" alt="Логотип">
+<header class="header">
+    <img src="images/logo.png" alt="Логотип" width="300" height="300">
     <h1>Онлайн-курсы</h1>
      <nav>
-     <ul>
-      <li> <a href="#">Онлайн-курсы</a></li>
-      <li> <a href="#">Главное меню</a></li>
-      <li><a href="#">Поиск по названию курса</a></li>
-      <li><a href="#">Регистрация</a></li>
-     </ul>
+         <ul>
+             <button><li> <a href="#">Онлайн-курсы</a></li></button>
+             <button><li> <a href="#">Главное меню</a></li></button>
      </nav> 
-    <a href="login.html">Вход</a>
+    <button><a href="login.html">Вход</a></button>
 </header>
  <main class="main">
     <section>
-    
+      <div class="about"> 
+            <h2>Онлайн-курсы</h2>
+            <a href="#" target="_blank">Все курсы</a>
+      </div>
+      <ul>
+            <li>
+              <img src="images/number1.png" alt="ТРИЗ-технологии" width="50" height="50"> 
+              <h3>ТРИЗ-технологии</h3>
+              <p>Длительность: 45 часов</p>
+              <p>Модулей: 3</p>
+              <a href="#">Узнать подробнее</a>
+              <span>От 6 520 Р</span>
+            </li>
+             <li>
+              <img src="images/number2.png" alt="Инновации в образовании: в поисках новых путей" width="50" height="50">
+              <h3>Инновации в образовании: в поисках новых путей</h3>
+              <p>Длительность: 45 часов</p>
+              <p>Модулей: 3</p>
+              <a href="Узнать подробнее"></a>
+              <span>От 6 520 Р</span>
+            </li>
+            <li>
+                <img src="images/number3.png" alt="Современные методы оценки знаний и умений" width="50" height="50">
+                <h3>Современные методы оценки знаний и умений</h3>
+                <p>Длительность: 45 часов</p>
+                <p>Модулей: 3</p>
+                <a href="Узнать подробнее"></a>
+                <span>От 6 520 Р</span>
+            </li>
+      </ul>
     </section>
     <section>
-
+         <form action="/">
+            <h1>Вход в личный кабинет</h1>
+            <input type="tel" name="phone" placeholder="Номер телефона" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <button>Войти</button>
+         </form>
     </section>
  </main>
  <footer>
