@@ -1,0 +1,83 @@
+/* Стили для главного баннера */
+.hero {
+    background: linear-gradient(135deg, #4a6baf 0%, #3a5795 100%);
+    color: var(--white);
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.hero-image {
+    flex: 1;
+    /* Здесь будет добавлено фоновое изображение */
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    height: 400px;
+    position: relative;
+}
+
+.hero-image:before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    z-index: -1;
+}
+
+/* Адаптив для мобильных устройств */
+@media (max-width: 991px) {
+    .hero .container {
+        flex-direction: column;
+    }
+    
+    .hero-content {
+        text-align: center;
+    }
+    
+    .hero-image {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+}

@@ -1,69 +1,395 @@
 <!DOCTYPE html>
-<html lang="ru"><head>
+<html lang="ru">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Платформа онлайн-курсов по «Обучению педагогов».</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Онлайн курсы для учителей начальных классов</title>
 </head>
-<body> 
-<header class="header">
-    <img src="images/logo.png" alt="Логотип" width="300" height="300">
-    <h1>Онлайн-курсы</h1>
-     <nav>
-         <ul>
-             <button><li> <a href="#">Онлайн-курсы</a></li></button>
-             <button><li> <a href="#">Главное меню</a></li></button>
-     </nav> 
-    <button><a href="login.html">Вход</a></button>
-</header>
- <main class="main">
-    <section>
-      <div class="about"> 
-            <h2>Онлайн-курсы</h2>
-            <a href="#" target="_blank">Все курсы</a>
-      </div>
-      <ul>
-            <li>
-              <img src="images/number1.png" alt="ТРИЗ-технологии" width="50" height="50"> 
-              <h3>ТРИЗ-технологии</h3>
-              <p>Длительность: 45 часов</p>
-              <p>Модулей: 3</p>
-              <a href="#">Узнать подробнее</a>
-              <span>От 6 520 Р</span>
-            </li>
-             <li>
-              <img src="images/number2.png" alt="Инновации в образовании: в поисках новых путей" width="50" height="50">
-              <h3>Инновации в образовании: в поисках новых путей</h3>
-              <p>Длительность: 45 часов</p>
-              <p>Модулей: 3</p>
-              <a href="Узнать подробнее"></a>
-              <span>От 6 520 Р</span>
-            </li>
-            <li>
-                <img src="images/number3.png" alt="Современные методы оценки знаний и умений" width="50" height="50">
-                <h3>Современные методы оценки знаний и умений</h3>
-                <p>Длительность: 45 часов</p>
-                <p>Модулей: 3</p>
-                <a href="Узнать подробнее"></a>
-                <span>От 6 520 Р</span>
-            </li>
-      </ul>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">ПедагогПрофи</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#courses">Курсы</a></li>
+                    <li><a href="#benefits">Преимущества</a></li>
+                    <li><a href="#testimonials">Отзывы</a></li>
+                    <li><a href="#faq">Вопросы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="login-btn">Войти</a>
+                <a href="#" class="register-btn">Регистрация</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section id="main" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Профессиональное развитие учителей начальных классов</h1>
+                <p>Современные онлайн-курсы для повышения квалификации и освоения новых методик преподавания</p>
+                <a href="#courses" class="btn-primary">Выбрать курс</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero.jpg" alt="Главный баннер">
+            </div>
+        </div>
     </section>
-    <section>
-         <form action="/">
-            <h1>Вход в личный кабинет</h1>
-            <input type="tel" name="phone" placeholder="Номер телефона" required>
-            <input type="password" name="password" placeholder="Пароль" required>
-            <button>Войти</button>
-         </form>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О нашей платформе</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Наша образовательная платформа создана опытными педагогами и методистами для учителей начальных классов, которые стремятся к профессиональному росту и освоению современных образовательных технологий.</p>
+                    <p>Мы предлагаем удобный формат обучения, который позволяет совмещать работу и повышение квалификации.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5000+</span>
+                        <span class="stat-text">Выпускников</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-text">Курсов</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-text">Экспертов</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
- </main>
- <footer>
-    <p>Сайт создан Пчельниковой Кристиной Федотовой Аленой Чернодаровой Даной Шорниковой Екатериной группа НК-25 </p>
-    <ul>
-        <li> <a href="#">Правовая оговорка</a></li>
-        <li> <a href="#">Пользовательское соглашение</a></li>
-        <li><a href="#">Политика конфиденциальности</a></li>
-    </ul>
-  </footer>
+
+    <!-- Курсы -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Наши курсы</h2>
+            <div class="courses-filter">
+                <button class="filter-btn active" data-filter="all">Все курсы</button>
+                <button class="filter-btn" data-filter="methods">Методики</button>
+                <button class="filter-btn" data-filter="digital">Цифровые инструменты</button>
+                <button class="filter-btn" data-filter="psychology">Психология</button>
+                <button class="filter-btn" data-filter="inclusion">Инклюзивное образование</button>
+            </div>
+            <div class="courses-grid">
+                <!-- Курс 1 -->
+                <article class="course-card">
+                    <div class="course-image">
+                        <img src="images/course1.jpg" alt="Курс 1">
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Методики</span>
+                        <h3>Современные методы обучения чтению в начальной школе</h3>
+                        <p>Практические подходы к формированию читательской грамотности младших школьников.</p>
+                        <div class="course-info">
+                            <span><i class="icon-duration"></i> 36 часов</span>
+                            <span><i class="icon-level"></i> Базовый</span>
+                        </div>
+                        <a href="#" class="btn-secondary">Подробнее</a>
+                    </div>
+                </article>
+                
+                <!-- Курс 2 -->
+                <article class="course-card">
+                    <div class="course-image">
+                        <img src="images/course2.jpg" alt="Курс 2">
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Цифровые инструменты</span>
+                        <h3>Интерактивная доска в начальной школе</h3>
+                        <p>Использование интерактивной доски для создания увлекательных уроков.</p>
+                        <div class="course-info">
+                            <span><i class="icon-duration"></i> 24 часа</span>
+                            <span><i class="icon-level"></i> Начальный</span>
+                        </div>
+                        <a href="#" class="btn-secondary">Подробнее</a>
+                    </div>
+                </article>
+                
+                <!-- Курс 3 -->
+                <article class="course-card">
+                    <div class="course-image">
+                        <img src="images/course3.jpg" alt="Курс 3">
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Психология</span>
+                        <h3>Работа с трудными детьми в начальной школе</h3>
+                        <p>Стратегии и подходы к коррекции поведения и обучению детей с особенностями поведения.</p>
+                        <div class="course-info">
+                            <span><i class="icon-duration"></i> 48 часов</span>
+                            <span><i class="icon-level"></i> Продвинутый</span>
+                        </div>
+                        <a href="#" class="btn-secondary">Подробнее</a>
+                    </div>
+                </article>
+            </div>
+            <div class="courses-more">
+                <a href="#" class="btn-outline">Показать все курсы</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2>Почему выбирают нас</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                    </div>
+                    <h3>Удобный формат</h3>
+                    <p>Обучайтесь в любое время и в любом месте с доступом к материалам 24/7</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                    </div>
+                    <h3>Практическая направленность</h3>
+                    <p>Все материалы созданы практикующими педагогами и готовы к применению в школе</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                    </div>
+                    <h3>Официальные документы</h3>
+                    <p>По окончании обучения вы получаете сертификат установленного образца</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                    </div>
+                    <h3>Поддержка кураторов</h3>
+                    <p>Опытные педагоги сопровождают вас на протяжении всего обучения</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Отзывы наших выпускников</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Курсы превзошли все мои ожидания! Я получила не только теоретические знания, но и массу практических материалов, которые уже использую на своих уроках."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="images/testimonials.jpg" alt="Отзывы">
+                        </div>
+                        <div class="author-info">
+                            <h4>Елена Смирнова</h4>
+                            <p>Учитель начальных классов, Москва</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Очень удобный формат обучения, который позволил мне совмещать работу и учебу. Особенно понравились вебинары с ведущими экспертами в области начального образования."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="images/testimonials1.jpg" alt="Отзывы">
+                        </div>
+                        <div class="author-info">
+                            <h4>Михаил Петров</h4>
+                            <p>Учитель начальных классов, Новосибирск</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-controls">
+                <button class="control-prev">Предыдущий</button>
+                <button class="control-next">Следующий</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преподаватели -->
+    <section id="teachers" class="teachers">
+        <div class="container">
+            <h2>Наши преподаватели</h2>
+            <div class="teachers-grid">
+                <div class="teacher-card">
+                    <div class="teacher-photo">
+                        <img src="images/teacher1.jpg" alt="Преподаватель 1">
+                    </div>
+                    <h3>Ирина Сергеева</h3>
+                    <p class="teacher-position">Кандидат педагогических наук</p>
+                    <p class="teacher-description">Автор методик по развитию читательской грамотности в начальной школе</p>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-photo">
+                        <img src="images/teacher2.jpg" alt="Преподаватель 2">                    </div>
+                    <h3>Александр Иванов</h3>
+                    <p class="teacher-position">Заслуженный учитель РФ</p>
+                    <p class="teacher-description">Эксперт в области применения цифровых технологий в начальном образовании</p>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-photo">
+                        <img src="images/teacher3.jpg" alt="Преподаватель 3">                    </div>
+                    <h3>Наталья Кузнецова</h3>
+                    <p class="teacher-position">Детский психолог</p>
+                    <p class="teacher-description">Специалист по работе с детьми с особыми образовательными потребностями</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Часто задаваемые вопросы -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Часто задаваемые вопросы</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как проходит обучение?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Обучение проходит в дистанционном формате на нашей образовательной платформе. Вы получаете доступ к видеолекциям, презентациям, практическим заданиям и дополнительным материалам. Также проводятся вебинары с преподавателями.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Какие документы я получу после окончания курса?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>По окончании обучения вы получаете удостоверение о повышении квалификации установленного образца, которое учитывается при аттестации и включается в портфолио педагога.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Сколько времени нужно уделять обучению?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы рекомендуем выделять на обучение 4-6 часов в неделю. Однако вы можете регулировать темп обучения в зависимости от вашей занятости и возможностей.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и форма регистрации -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-form-wrapper">
+                <h2>Начните обучение прямо сейчас</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Интересующий курс</label>
+                        <select id="course" name="course">
+                            <option value="">Выберите курс</option>
+                            <option value="reading">Методика обучения чтению</option>
+                            <option value="digital">Цифровые инструменты</option>
+                            <option value="psychology">Работа с трудными детьми</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение (опционально)</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div class="form-group form-checkbox">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <label for="agreement">Я согласен с <a href="#">политикой конфиденциальности</a></label>
+                    </div>
+                    <button type="submit" class="btn-primary">Отправить заявку</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Контактная информация</h3>
+                <p><i class="fa-solid fa-phone"></i> +7 (XXX) XXX-XX-XX</p>
+                <p><i class="fa-solid fa-envelope"></i> info@mail.ru</p>
+                <p><i class="fa-solid fa-map-marker-alt"></i> г. Москва, ул. Образовательная, д. 1</p>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fa-brands fa-vk"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <a href="#">ПедагогПрофи</a>
+                    </div>
+                    <p>Образовательная платформа для профессионального развития учителей начальных классов</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#main">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#courses">Курсы</a></li>
+                        <li><a href="#benefits">Преимущества</a></li>
+                        <li><a href="#testimonials">Отзывы</a></li>
+                        <li><a href="#faq">Вопросы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-courses">
+                    <h4>Популярные курсы</h4>
+                    <ul>
+                        <li><a href="#">Методика обучения письму</a></li>
+                        <li><a href="#">Математика в начальной школе</a></li>
+                        <li><a href="#">Проектная деятельность</a></li>
+                        <li><a href="#">Инклюзивное образование</a></li>
+                    </ul>
+                </div>
+                <div class="footer-subscribe">
+                    <h4>Подпишитесь на рассылку</h4>
+                    <p>Получайте информацию о новых курсах и образовательных мероприятиях</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ПедагогПрофи. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+
+
 </body>
 </html>
