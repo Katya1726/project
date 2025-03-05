@@ -27,10 +27,39 @@
                 </ul>
             </nav>
             <div class="auth-buttons">
-                <a href="#" class="login-btn">Войти</a>
-                <a href="#" class="register-btn">Регистрация</a>
+                <a href="#" class="login-btn" id="login-btn">Войти</a>
+                <a href="#" class="register-btn" id="register-btn">Регистрация</a>
             </div>
         </div>
+    </header>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span id="closeLogin" class="close">&times;</span>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Вход</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Модальное окно регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span id="closeRegister" class="close">&times;</span>
+            <form id="registerForm">
+                <input type="email" id="registerEmail" placeholder="Email" required>
+                <input type="text" id="registerUsername" placeholder="Username" required>
+                <input type="password" id="registerPassword" placeholder="Password" required>
+                <button type="submit">Регистрация</button>
+            </form>
+        </div>
+    </div>
+
+
+
+            
     </header>
 
     <!-- Главный баннер -->

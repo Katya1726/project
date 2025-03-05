@@ -105,3 +105,70 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const loginBtn = document.getElementById('login-btn');
+    const registerBtn = document.getElementById('register-btn');
+    const loginModal = document.getElementById('loginModal');
+    const registerModal = document.getElementById('registerModal');
+    const closeLogin = document.getElementById('closeLogin');
+    const closeRegister = document.getElementById('closeRegister');
+    const loginForm = document.getElementById('loginForm');
+    const registerForm = document.getElementById('registerForm');
+
+    // Открытие модального окна для входа
+    loginBtn.addEventListener('click', function() {
+        loginModal.classList.add('show');
+    });
+
+    // Открытие модального окна для регистрации
+    registerBtn.addEventListener('click', function() {
+        registerModal.classList.add('show');
+    });
+
+    // Закрытие модального окна для входа
+    closeLogin.addEventListener('click', function() {
+        loginModal.classList.remove('show');
+    });
+
+    // Закрытие модального окна для регистрации
+    closeRegister.addEventListener('click', function() {
+        registerModal.classList.remove('show');
+    });
+
+    // Закрытие модального окна при клике вне его
+    window.addEventListener('click', function(event) {
+        if (event.target === loginModal) {
+            loginModal.classList.remove('show');
+        }
+        if (event.target === registerModal) {
+            registerModal.classList.remove('show');
+        }
+    });
+
+    // Обработка отправки формы входа
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('loginEmail').value;
+        const password = document.getElementById('loginPassword').value;
+
+        console.log('Login - Email:', email);
+        console.log('Login - Password:', password);
+
+        loginModal.classList.remove('show');
+    });
+
+    // Обработка отправки формы регистрации
+    registerForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('registerEmail').value;
+        const username = document.getElementById('registerUsername').value;
+        const password = document.getElementById('registerPassword').value;
+
+        console.log('Register - Email:', email);
+        console.log('Register - Username:', username);
+        console.log('Register - Password:', password);
+
+        registerModal.classList.remove('show');
+    });
+});
